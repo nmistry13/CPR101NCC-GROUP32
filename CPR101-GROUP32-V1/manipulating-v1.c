@@ -13,7 +13,7 @@ void manipulating()
 	do
 	{
 		printf("Type the 1st strig(q - to quit):\n"); //Prompt user to input string
-		//Get the string input by the user and store it in string1. The length of the string is less than or equal to BUFFER_SIZE.
+		//Get the string input by the user and store it in string1. The length of the string is less than BUFFER_SIZE.
 		fgets(string1, BUFFER_SIZE, stdin); 
 
 		if (strchr(string1, '\n') == NULL)  //  If there is no newline character, it means the input has exceeded the buffer size.
@@ -35,7 +35,7 @@ void manipulating()
 			if ((strcmp(string1, "q") != 0)) // If string1 is not 'q', continue. Otherwise, the program ends after displaying an end prompt.
 			{
 				printf("Type the 2nd string: \n"); // Prompt user to input string
-				//Get the string input by the user and store it in string2. The length of the string is less than or equal to BUFFER_SIZE
+				//Get the string input by the user and store it in string2. The length of the string is less than BUFFER_SIZE
 				fgets(string2, BUFFER_SIZE, stdin);
 				if (strchr(string2, '\n') == NULL)  //  If there is no newline character, it means the input has exceeded the buffer size.
 				{
@@ -70,6 +70,12 @@ void manipulating()
 		}
 		
 	} while (strcmp(string1, "q") != 0); //If string1 is not "q", return to the beginning of the do-while loop and continue Otherwise, the program ends after displaying an end prompt.
-	printf("*** End of Concatenating ***\n"); 		
+	printf("*** End of Concatenating ***\n"); 
+	
+	/* Version 2 */
 
+	
+
+/* Version 3 */
+	
 } 

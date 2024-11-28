@@ -37,7 +37,7 @@ void tokenizing()
 
 			if (strcmp(words, "q") != 0)  //If words is not 'q', continue. Otherwise, the program ends after displaying an end prompt.
 			{
-				//Tokenize the string stored in 'words' using space as delimiter and store the first token in 'nextWord'. The 'context' keeps track of the current position for subsequent strtok_s calls.
+				//Tokenize the string stored in 'words' using space as delimiter and store the first token in 'nextWord'. 
 				nextWord = strtok(words, " ");
 
 				wordsCounter = 1;  //wordsCounter used to store the number of tokenizing.
@@ -58,5 +58,11 @@ void tokenizing()
 		
 	} while (!isQuit); // isQuit = 0 means return to the beginning of the do-while loop and continue. Otherwise, the program ends after displaying an end prompt.
 	printf("*** End of Tokenizing Words Demo ***\n\n");
+	
+
+/* Version 2 */
+
+
+/* Version 3 */
 	
 }
